@@ -1,0 +1,239 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --tea-green: #c2f9bbff;
+    --lapis-lazuli: #2660a4ff;
+    --buff: #eaac8bff;
+    --dogwood-rose: #cc3363ff;
+    --russian-violet: #20063bff;
+    --seasalt: #fafafaff;
+    --ultra-violet: #54457fff;
+    --bittersweet: #ff6663ff;
+    --celestial-blue: #20a4f3ff;
+    --hunyadi-yellow: #f4ac45ff;
+}
+
+/* typography and icons */
+
+h1{
+    color: #0F8CDF;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+i{
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.fa-solid{
+    color: #999;
+}
+
+.liked{
+    color: red;
+}
+
+.retweeted {
+  color: limegreen;
+}
+
+/* layout */
+
+main, header{
+    width: 300px;
+    margin: 0 auto;
+}
+
+header{
+    padding-bottom: 25px;
+}
+
+.tweet-input-area {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+/* textareas + btn */
+
+textarea{
+    border: none;
+    resize: none;
+    padding: 10px;
+    margin: 0 0 20px 0;
+    height: 60px;
+    width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+    outline: none;
+}
+
+#tweet-btn {
+    background-color: #1DA1F2;
+    border: none;
+    color: white;
+    padding: 10px 19px;
+    border-radius: 20px;
+    width: 100%; 
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* tweet */
+
+.tweet{
+    border-top: 1px solid lightgray;
+    padding: 20px 0 0 0;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.tweet-inner{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.tweet-details{
+    display: flex;
+    font-size: 13px;
+    justify-content: space-between;
+    width: 160px;
+}
+
+.tweet-detail{
+    display: flex;
+    gap: 4px;
+}
+
+.tweet-reply{
+    border-top: 1px solid lightgray;
+    padding: 20px 0 0 0px;
+    margin: 10px 0 10px 40px;
+    width: 80%;
+}
+
+.handle{
+    font-size: 12px;
+    font-weight: 500;
+    color: #555;
+    margin-top: 0;
+}
+
+.tweet-text{
+    width: 207px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/* modal */
+
+#modal {
+    text-align: center;
+    width: 380px;
+    height: 380px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    background: var(--celestial-blue);
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#modal h1 {
+    color: var(--seasalt);
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+#modal h3 {
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input {
+    width: 150px;
+}
+
+#handle-input {
+    margin-top: 10px;
+    border: none;
+    height: 28px;
+    border-radius: 4px;
+    outline: none;
+    text-align: center;
+}
+
+#handle-label {
+    font-size: 18px;
+}
+
+#img-input {
+    display: none;
+}
+
+#img-label {
+    cursor: pointer;
+    margin-top: 30px;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    background: var(--hunyadi-yellow);
+    transition: transform 0.3s;
+}
+
+#img-label:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 10px #1d1d1d;
+}
+
+#sign-up-btn {
+    margin-top: 30px;
+    background: var(--bittersweet);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: var(--seasalt);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#sign-up-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 5px 10px #1d1d1d;
+}
+
+
+/* images */
+
+.profile-pic{
+    border: 1px solid lightgray;
+    border-radius: 50%;
+    width: 48px;
+}
+
+/* utility */
+.hidden{
+    display: none;
+}
