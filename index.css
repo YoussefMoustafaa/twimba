@@ -134,7 +134,7 @@ textarea{
 
 /* modal */
 
-#modal {
+/* #modal {
     text-align: center;
     width: 380px;
     height: 380px;
@@ -222,7 +222,7 @@ form input {
 #sign-up-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0px 5px 10px #1d1d1d;
-}
+} */
 
 
 /* images */
